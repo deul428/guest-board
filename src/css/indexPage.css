@@ -1,0 +1,28 @@
+.indexArea {
+    position: relative; width: 100vw; height: 100vh;
+    max-height: 1080px; 
+    background: rgb(235,242,255);
+    background: -moz-linear-gradient(0deg, rgba(235,242,255,1) 0%, rgba(142,139,215,1) 34%, rgba(84,82,130,1) 50%, rgba(57,55,87,1) 61%, rgba(7,7,10,1) 77%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(235,242,255,1) 0%, rgba(142,139,215,1) 34%, rgba(84,82,130,1) 50%, rgba(57,55,87,1) 61%, rgba(7,7,10,1) 77%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(235,242,255,1) 0%, rgba(142,139,215,1) 34%, rgba(84,82,130,1) 50%, rgba(57,55,87,1) 61%, rgba(7,7,10,1) 77%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebf2ff",endColorstr="#000000",GradientType=1);
+    background-size: cover; background-repeat: no-repeat;
+}
+
+.indexArea .headerArea { width: 100%; display: inline-flex; justify-content: center; }
+.indexArea .imgArea { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.indexArea .imgArea table { width: 100%; height: 100%; }
+.indexArea .imgArea table tbody { display: inline-flex; width: inherit; height: inherit; align-items: center; justify-content: center; flex-direction: column; }
+
+.indexArea .imgArea table tr { }
+.indexArea .imgArea table tr td:first-child { text-align: right; }
+.indexArea .imgArea table tr td:last-child { text-align: left; }
+.indexArea .imgArea table td { width: 47%; padding: 3%; text-align: center; }
+.indexArea .imgArea table td img.mainImg { max-width: calc(100% - 3%); filter: brightness(1); transition: all 0.2s linear; cursor: pointer; }
+.indexArea .imgArea table td img.mainImg:hover { filter: brightness(1.2); }
+
+.indexArea .imgArea table td img.mainFic { }
+.indexArea .imgArea table td img.mainArt { }
+.indexArea .imgArea table td img.mainVdo { }
+.indexArea .imgArea table td img.mainRvw { }

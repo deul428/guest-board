@@ -1,0 +1,36 @@
+body {
+    background: rgb(174,173,213);
+    background: -moz-linear-gradient(121deg, rgba(174,173,213,1) 0%, rgba(169,159,218,1) 34%, rgba(157,130,229,1) 50%, rgba(137,85,237,1) 77%, rgba(88,46,165,1) 100%);
+    background: -webkit-linear-gradient(121deg, rgba(174,173,213,1) 0%, rgba(169,159,218,1) 34%, rgba(157,130,229,1) 50%, rgba(137,85,237,1) 77%, rgba(88,46,165,1) 100%);
+    background: linear-gradient(121deg, rgba(174,173,213,1) 0%, rgba(169,159,218,1) 34%, rgba(157,130,229,1) 50%, rgba(137,85,237,1) 77%, rgba(88,46,165,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aeadd5",endColorstr="#582ea5",GradientType=1);
+}
+
+.stationArea { width: 100%; height: calc(100% + 50px); display: inline-flex; justify-content: center; align-items: flex-start; }
+
+.stationArea .detailArea {
+    position: relative; z-index: 998; margin: 3% 0;
+    width: 50%;
+    padding: 2%; background: #d4cef6; pointer-events: visible; 
+}
+.stationArea .detailArea h3.textArea { 
+    white-space: pre-wrap;
+}
+.stationArea .detailArea p {
+    text-indent: 1.5em;
+    margin: 0.5em 0;
+}
+.stationArea .detailArea:before {
+    content: '';
+    width: 104%; height: 104%;
+    position: absolute; top: -2%; left: -2%; z-index: 999; background: transparent; border: 2px dotted #eee; pointer-events: none; 
+}
+
+.stationArea .detailArea h5 { text-align: justify; }
+.stationArea .detailArea .imgArea { width: 100%; }
+.stationArea .detailArea .imgArea .imgCntn { width: 100%; cursor: pointer; }
+
+.stationArea .detailArea div .vdoArea { position: relative; width: 100%; height: 0; padding-bottom: 59.25%; }
+.stationArea .detailArea div .vdoArea iframe,
+.stationArea .detailArea div .vdoArea object,
+.stationArea .detailArea div .vdoArea embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}

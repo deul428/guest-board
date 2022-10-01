@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LCDDot TR';
+    src: url('LCDDot-TR.woff2') format('woff2'),
+        url('LCDDot-TR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

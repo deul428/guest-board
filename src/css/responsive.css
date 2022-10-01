@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@media all and (min-width:0px) and (max-width:999px){ 
+    
+}
+
+@media all and (min-width:0px) and (max-width:370px){ 
+    h1 { font-size: 30px !important; }
+    h2 { font-size: 20px !important; }
+
+    .LUArea .itemArea .lineupItem { max-width: 140px !important; width: 100%; height: fit-content; }
+    .LUArea .itemArea .lineupItem h1 { font-size: 24px !important; line-height: 36px !important; margin: 10% 0px !important; }
+}
+@media all and (min-width:0px) and (max-width:479px){ /* mobile con */
+    h1 { font-size: 34px; }
+    h2 { font-size: 22px; }
+
+    header { width: 102%; } 
+    header .textArea h1 { margin: -4px 12px 0; }
+
+    header img.imgDefault { display: none; }
+    header img.imgMbil { display: block !important; }
+
+    .introArea .imgArea img.imgLogo { max-width: 85%; }
+    .footerArea img { max-width: 70%; }
+
+    .indexArea .imgArea table td img.mainImg {  }
+    .indexArea .imgArea table td { width: 48%; padding: 2%; }
+    .indexArea .imgArea table td img.mainImg { max-width: 90%; }
+
+    .commonDotted { width: 90vw; }
+    .listArea .listItemArea img.listItem { max-width: 80%; margin: 10% 0; }
+
+    .LUArea .itemArea .lineupItem { max-width: 180px; width: 100%; height: fit-content; }
+    .LUArea .itemArea .lineupItem h1 { font-size: 28px; line-height: 40px; margin: 7% 0px; }
+
+    .stationArea .detailArea { width: 80%; padding: 6%; }
+    .stationArea .detailArea:before { display: none; }
+    .stationArea .detailArea h3 { font-size: 26px; }
+    .stationArea .detailArea h4 { font-size: 20px; }
+    .stationArea .detailArea h5 { font-size: 16px; }
+    .stationArea .detailArea h5 p { margin: 0.3em 0; line-height: 28px; }
+    .stationArea h3 { margin: 12% 0 6%; }
+    .stationArea h4 { margin: 6% 0; }
+}
+
+@media all and (min-width:480px) and (max-width:599px){ 
+    h1 { font-size: 40px; }
+    h2 { font-size: 26px; }
+
+    header { width: 101%; } 
+    header .textArea h1 { margin: -4px 18px 0; }
+
+    header img.imgDefault { display: none; }
+    header img.imgMbil { display: block !important; }
+
+    /* intro */
+    .introArea .imgArea img.imgLogo { max-width: 70%; }
+    .footerArea img { max-width: 70%; }
+
+    /* indexpage */
+    .indexArea .imgArea table td { width: 48%; padding: 2%; }
+    .indexArea .imgArea table td img.mainImg { max-width: 90%; }    
+
+    /* list */
+    .commonDotted { width: 90vw; }
+    .listArea .listItemArea img.listItem { max-width: 80%; margin: 8% 0; }
+    
+    /* line up */
+    .LUArea .itemArea .lineupItem { width: 220px; height: fit-content; }
+    .LUArea .itemArea .lineupItem h1 { font-size: 32px; line-height: 46px; margin: 4% 0px; }
+
+    /* station */
+    .stationArea .detailArea { width: 83%; padding: 5%; }
+    .stationArea .detailArea:before { display: none; }
+    .stationArea .detailArea h3 { font-size: 26px; }
+    .stationArea .detailArea h4 { font-size: 20px; }
+    .stationArea .detailArea h5 { font-size: 16px; }
+    .stationArea .detailArea h5 p { margin: 0.3em 0; line-height: 28px; }
+    .stationArea h3 { margin: 12% 0 6%; }
+    .stationArea h4 { margin: 6% 0; }
+}
+@media all and (min-width:600px) and (max-width:780px){
+    h1 { font-size: 44px !important; }
+    header { width: 100% !important; } 
+    header .textArea h1 { margin: -4px 22px 0 !important; }
+}
+@media all and (min-width:600px) and (max-width:999px){ /* 태블릿 */
+    h1 { font-size: 46px; }
+    h2 { font-size: 28px; }
+    
+    header { width: 90%; } 
+    header .textArea h1 { margin: -4px 22px 0; }
+
+    .introArea .imgArea img.imgLogo { max-width: 75%; }
+    .footerArea img { max-width: 80%; }
+
+    .indexArea .imgArea table td { width: 48%; padding: 2%; }
+    .indexArea .imgArea table td img.mainImg { max-width: 80%; }
+
+    .commonDotted { width: 90vw; }
+    .listArea .listItemArea img.listItem { max-width: 80%; margin: 6% 0; }
+    .h2Area h2 { margin-top: 130px; }
+    .indexArea .h2Area h2 { margin-top: 150px; }
+
+    .LUArea .itemArea .lineupItem { width: 250px; height: fit-content; }
+    .LUArea .itemArea .lineupItem h1 { font-size: 36px !important;}
+
+    .stationArea .detailArea { width: 85%; padding: 4%; }
+    .stationArea .detailArea:before { display: none; }
+    .stationArea .detailArea h3 { font-size: 28px; }
+    .stationArea .detailArea h4 { font-size: 20px; }
+    .stationArea .detailArea h5 { font-size: 16px; }
+    .stationArea .detailArea h5 p { margin: 0.4em 0; line-height: 30px; }
+    .stationArea h3 { margin: 10% 0 6%; }
+    .stationArea h4 { margin: 6% 0; }
+}
+
+@media all and (min-width:1000px) and (max-width:1239px){ 
+    h1 { font-size: 46px; }
+
+    header { width: 70%; } 
+    header .textArea h1 { margin: -4px 26px 0; }
+
+    .commonDotted { width: 90vw; }
+    .listArea .listItemArea img.listItem { max-width: 70%; margin: 4% 0; }
+
+    .stationArea .detailArea { width: 76%; padding: 4%; }
+    .stationArea .detailArea:before { display: none; }
+    .stationArea .detailArea h3 { font-size: 32px; }
+    .stationArea .detailArea h4 { font-size: 22px; }
+    .stationArea h3 { margin: 8% 0 5%; }
+    .stationArea h4 { margin: 5% 0; }
+}
+
+@media all and (min-width:1240px) and (max-width:1449px){ 
+    header .textArea h1 { margin: -4px 20px 0; }
+
+    .stationArea .detailArea { width: 70%; }
+    .stationArea .detailArea:before {}
+    .stationArea .detailArea h3 { font-size: 34px; }
+    .stationArea .detailArea h4 { font-size: 24px; }
+    .stationArea h3 { margin: 8% 0 4%; }
+    .stationArea h4 { margin: 4% 0; }
+}
+
+@media all and (min-width:1450px){ 
+    
+}
+/* 엘리베이터(스크롤) 사이즈를 감안해서 줄어드는 경계마다 넉넉하게 설계해야 함 */

@@ -1,0 +1,17 @@
+.introArea {
+    position: relative; 
+    width: 100vw; height: 100vh;
+    max-height: 1080px; 
+    background: rgb(235,242,255);
+    background: -moz-linear-gradient(0deg, rgba(235,242,255,1) 0%, rgba(124,121,186,1) 26%, rgba(55,53,83,1) 42%, rgba(17,16,25,1) 56%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(235,242,255,1) 0%, rgba(124,121,186,1) 26%, rgba(55,53,83,1) 42%, rgba(17,16,25,1) 56%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(235,242,255,1) 0%, rgba(124,121,186,1) 26%, rgba(55,53,83,1) 42%, rgba(17,16,25,1) 56%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebf2ff",endColorstr="#000000",GradientType=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.introArea .imgArea { width: 100%; height: 100%; position: absolute; display: inline-flex; justify-content: center; align-items: center; }
+.introArea .imgArea img.imgLogo { max-width: 55%; }
+
+  
