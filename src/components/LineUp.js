@@ -7,7 +7,7 @@ import LineUpFic from "./LineUpFic";
 function LineUp({datas}) {
   const { listParams, cntryParams } = useApplicationContext();
   var item = datas;
-  console.log(listParams, cntryParams);
+  // console.log(listParams, cntryParams);
   return <LineUpFic item={item}/>
 }
 

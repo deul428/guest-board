@@ -1,18 +1,15 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useApplicationContext } from '../Contexts/Context';
-import headerImg from "../imgRe/headerImg.png"
-import headerImgMbil from "../imgRe/headerImgMbil.png"
+import headerImg from "../imgHeader/headerImg.png"
+import headerImgMbil from "../imgHeader/headerImgMbil.png"
 
 function Header() {
   const { setListParams } = useApplicationContext();
   const [isSelect, setSelect] = useState("");
 
-
   let dataTest = ['fiction', 'art', 'video', 'review'];
-
   var linkPattern = '/list';
-
 
   //클릭하면 depthList로 파라미터 넘겨 줌 -> 지금 클릭된 파라미터가 뭔지 확인, ListParams로 넘겨 줘서 전역에서 사용
   // const depthList = (params, e) => { 
@@ -35,12 +32,12 @@ function Header() {
     } 
     setListParams(leaveParams);
 		
-    console.log(params, leaveParams);
+    // console.log(params, leaveParams);
     e.preventDefault();
 
     setSelect((prev) => {
       let siblings = e.target.parentElement.parentElement.getElementsByClassName('text');
-      console.log(e.target, siblings);
+      // console.log(e.target, siblings);
       //타겟의 형제들 순회하면서 selected 클래스 remove
       for (var i=0; i<siblings.length; i++){
         siblings[i].classList.remove('selected');
@@ -50,7 +47,6 @@ function Header() {
       return e.target;
     });
 
-    
     if (leaveParams == 'vdo') {
       linkPattern = '/lineup';
     } 
@@ -84,28 +80,6 @@ function Header() {
             </Link>
           )
         })}
-        {/* 
-        <Link to="/list">
-          <h1 className={'text textFiction' + (idx == isSelect ? ' selected' : '')}
-          value={idx}
-          onClick={(e)=>{depthList('fic', e)}}>fiction</h1>
-        </Link>
-        <Link to="/list">
-          <h1 className={'text textArt' + (idx == isSelect ? ' selected' : '')} 
-          value={idx}
-          onClick={(e)=>{depthList('art', e)}}>art</h1>
-        </Link>
-        <Link to="/lineup">
-          <h1 className='text textVideo'
-          value={idx}
-          onClick={(e)=>{depthList('vdo', e)}}>video</h1>
-        </Link>
-        <Link to="/list">
-          <h1 className='text textReview'
-          value={idx}
-          onClick={(e)=>{depthList('rvw', e)}}>review</h1>
-        </Link> 
-        */}
       </div>
     </header>
   );

@@ -1,15 +1,23 @@
 @charset "UTF-8";
 @media all and (min-width:0px) and (max-width:999px){ 
-    
+    .listArea:before,
+    .LUArea .LUWrap:before,
+    .LUArea .LUWrap .itemArea.itemFicKor:before { display: none !important; }
+    .LUArea .LUWrap .itemArea.itemFicKor { margin-top: 0; }
 }
 
 @media all and (min-width:0px) and (max-width:370px){ 
     h1 { font-size: 30px !important; }
     h2 { font-size: 20px !important; }
-
-    .LUArea .itemArea .lineupItem { max-width: 140px !important; width: 100%; height: fit-content; }
-    .LUArea .itemArea .lineupItem h1 { font-size: 24px !important; line-height: 36px !important; margin: 10% 0px !important; }
+    header .textArea h1 { font-size: 26px !important; }
 }
+
+@media all and (min-width:0px) and (max-width:390px){ 
+    /* line up */
+    .LUArea .LUWrap .itemArea .lineups .lineup { margin: 14px 10px; }
+    .LUArea .LUWrap .itemArea .lineups .lineup h1 { width: 134px !important; height: fit-content; font-size: 26px !important; line-height: 46px !important; }
+}
+
 @media all and (min-width:0px) and (max-width:479px){ /* mobile con */
     h1 { font-size: 34px; }
     h2 { font-size: 22px; }
@@ -23,6 +31,8 @@
     .introArea .imgArea img.imgLogo { max-width: 85%; }
     .footerArea img { max-width: 70%; }
 
+    .indexArea .indexWrap, .listArea .listWrap { height: 90vh; }
+
     .indexArea .imgArea table td img.mainImg {  }
     .indexArea .imgArea table td { width: 48%; padding: 2%; }
     .indexArea .imgArea table td img.mainImg { max-width: 90%; }
@@ -30,17 +40,18 @@
     .commonDotted { width: 90vw; }
     .listArea .listItemArea img.listItem { max-width: 80%; margin: 10% 0; }
 
-    .LUArea .itemArea .lineupItem { max-width: 180px; width: 100%; height: fit-content; }
-    .LUArea .itemArea .lineupItem h1 { font-size: 28px; line-height: 40px; margin: 7% 0px; }
+    /* line up */
+    .LUArea .LUWrap { padding-top: 70px; }
+    .LUArea .LUWrap .itemArea.itemArea.itemFicKor .lineups .lineup { margin: 14px 8px; }
+    .LUArea .LUWrap .itemArea .lineups .lineup { margin: 14px 10px; }
+    .LUArea .LUWrap .itemArea .lineups .lineup h1 { width: 160px; height: fit-content; font-size: 30px; line-height: 50px; }
 
-    .stationArea .detailArea { width: 80%; padding: 6%; }
+    .stationArea .detailArea { width: 85%; padding: 8% 5%; margin: 10px 0; }
     .stationArea .detailArea:before { display: none; }
-    .stationArea .detailArea h3 { font-size: 26px; }
+    .stationArea .detailArea h3 { font-size: 24px; }
     .stationArea .detailArea h4 { font-size: 20px; }
-    .stationArea .detailArea h5 { font-size: 16px; }
-    .stationArea .detailArea h5 p { margin: 0.3em 0; line-height: 28px; }
-    .stationArea h3 { margin: 12% 0 6%; }
-    .stationArea h4 { margin: 6% 0; }
+    .stationArea .detailArea h5 { font-size: 16px; line-height: 30px; }
+    .stationArea .detailArea h5 p { margin: 0.3em 0; line-height: 26px; }
 }
 
 @media all and (min-width:480px) and (max-width:599px){ 
@@ -64,25 +75,24 @@
     /* list */
     .commonDotted { width: 90vw; }
     .listArea .listItemArea img.listItem { max-width: 80%; margin: 8% 0; }
-    
+
     /* line up */
-    .LUArea .itemArea .lineupItem { width: 220px; height: fit-content; }
-    .LUArea .itemArea .lineupItem h1 { font-size: 32px; line-height: 46px; margin: 4% 0px; }
+    .LUArea .LUWrap { padding-top: 100px; }
+    .LUArea .LUWrap .itemArea.itemArea.itemFicKor .lineups .lineup { margin: 14px 8px; }
+    .LUArea .LUWrap .itemArea .lineups .lineup { margin: 14px 10px; }
+    .LUArea .LUWrap .itemArea .lineups .lineup h1 { width: 200px !important; height: fit-content; font-size: 32px; line-height: 50px; }
 
     /* station */
-    .stationArea .detailArea { width: 83%; padding: 5%; }
+    .stationArea .detailArea { width: 83%; padding: 5%; margin: 30px 0; }
     .stationArea .detailArea:before { display: none; }
-    .stationArea .detailArea h3 { font-size: 26px; }
+    .stationArea .detailArea h3 { font-size: 24px; }
     .stationArea .detailArea h4 { font-size: 20px; }
     .stationArea .detailArea h5 { font-size: 16px; }
-    .stationArea .detailArea h5 p { margin: 0.3em 0; line-height: 28px; }
-    .stationArea h3 { margin: 12% 0 6%; }
-    .stationArea h4 { margin: 6% 0; }
+    .stationArea .detailArea h5 p { margin: 0.3em 0; line-height: 26px; }
 }
 @media all and (min-width:600px) and (max-width:780px){
     h1 { font-size: 44px !important; }
     header { width: 100% !important; } 
-    header .textArea h1 { margin: -4px 22px 0 !important; }
 }
 @media all and (min-width:600px) and (max-width:999px){ /* 태블릿 */
     h1 { font-size: 46px; }
@@ -98,21 +108,15 @@
     .indexArea .imgArea table td img.mainImg { max-width: 80%; }
 
     .commonDotted { width: 90vw; }
-    .listArea .listItemArea img.listItem { max-width: 80%; margin: 6% 0; }
-    .h2Area h2 { margin-top: 130px; }
-    .indexArea .h2Area h2 { margin-top: 150px; }
+    .listArea .listItemArea img.listItem { max-width: 70%; margin: 4% 0; }
+    .LUArea .LUWrap .itemArea .lineups .lineup h1 { width: 240px; height: fit-content; font-size: 36px; }
 
-    .LUArea .itemArea .lineupItem { width: 250px; height: fit-content; }
-    .LUArea .itemArea .lineupItem h1 { font-size: 36px !important;}
-
-    .stationArea .detailArea { width: 85%; padding: 4%; }
-    .stationArea .detailArea:before { display: none; }
+    .stationArea .detailArea { width: 85%; padding: 4%; margin: 30px 0; }
+    .stationArea .detailArea:before { width: calc(100% + 20px); height: calc(100% + 20px); top: -12px; left: -12px; }
     .stationArea .detailArea h3 { font-size: 28px; }
     .stationArea .detailArea h4 { font-size: 20px; }
     .stationArea .detailArea h5 { font-size: 16px; }
     .stationArea .detailArea h5 p { margin: 0.4em 0; line-height: 30px; }
-    .stationArea h3 { margin: 10% 0 6%; }
-    .stationArea h4 { margin: 6% 0; }
 }
 
 @media all and (min-width:1000px) and (max-width:1239px){ 
@@ -125,25 +129,43 @@
     .listArea .listItemArea img.listItem { max-width: 70%; margin: 4% 0; }
 
     .stationArea .detailArea { width: 76%; padding: 4%; }
-    .stationArea .detailArea:before { display: none; }
     .stationArea .detailArea h3 { font-size: 32px; }
     .stationArea .detailArea h4 { font-size: 22px; }
-    .stationArea h3 { margin: 8% 0 5%; }
-    .stationArea h4 { margin: 5% 0; }
+}
+
+@media all and (min-width:1000px) and (max-width:1390px){ 
+    .listArea:before,
+    .LUArea .LUWrap:before,
+    .LUArea .LUWrap .itemArea.itemFicKor:before { width: 80%; left: 10%; }
 }
 
 @media all and (min-width:1240px) and (max-width:1449px){ 
     header .textArea h1 { margin: -4px 20px 0; }
 
     .stationArea .detailArea { width: 70%; }
-    .stationArea .detailArea:before {}
     .stationArea .detailArea h3 { font-size: 34px; }
     .stationArea .detailArea h4 { font-size: 24px; }
-    .stationArea h3 { margin: 8% 0 4%; }
-    .stationArea h4 { margin: 4% 0; }
 }
 
 @media all and (min-width:1450px){ 
-    
+    .introArea .imgArea img.imgLogo { margin-right: 20px; }
 }
-/* 엘리베이터(스크롤) 사이즈를 감안해서 줄어드는 경계마다 넉넉하게 설계해야 함 */
+
+@media all and (min-height:0px) and (max-height:519px){ 
+    .listArea .listItemArea img.listItem { width: 40% !important; margin: 2% 0; }
+    .indexArea .imgArea table td img.mainImg { width: 70%; }
+    .indexArea .imgArea table td { padding: 2%; }
+}
+@media all and (min-height:520px) and (max-height:579px){ 
+    .listArea .listItemArea img.listItem { width: 50% !important; margin: 2% 0; }
+}
+
+@media all and (min-height:0px) and (max-height:800px){ 
+    .listArea:before,
+    .LUArea .LUWrap:before { display: none; }
+    .LUArea .LUWrap .itemArea.itemFicKor:before { display: none; }
+    .listArea .listItemArea img.listItem { width: 60%; }
+
+    .indexArea .imgArea table td img.mainImg { width: 80%; }
+    .footerArea { display: none; }
+}

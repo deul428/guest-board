@@ -1,8 +1,5 @@
-.listArea { max-height: 1080px; }
-.listArea .listItemArea { 
-    position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); 
-    width: 100%; display: inline-flex; flex-direction: column; justify-content: center; align-items: center; 
-}
+
+.listArea .listItemArea { position: relative; width: 100%; z-index: 998; display: inline-flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .listArea .listItemArea > div { text-align: center; }
 .listArea .listItemArea img.listItem { max-width: 80%; margin: 2% 0; cursor: pointer; transition: all 0.3s ease-in-out; filter: brightness(0.7); 

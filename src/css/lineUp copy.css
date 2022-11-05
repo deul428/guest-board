@@ -1,9 +1,0 @@
-.LUArea { max-height: 1080px; }
-.LUArea .h2Area { position: relative; top: 15%; }
-.LUArea .h2Area h2 { margin: 0; position: relative; text-align: center; width: 100%; }
-
-.LUArea .itemArea { display: inline-flex; flex-wrap: wrap; max-width: 800px; width: 50%; height: 70vh; align-items: center; justify-content: space-evenly; align-content: center; position: absolute; left: 50%; transform: translateX(-50%); bottom: 8%; z-index: 998; flex-direction: column;}
-.LUArea .itemArea.itemLong { }
-
-.LUArea .itemArea .lineupItem { width: 50%; height: fit-content; }
-.LUArea .itemArea .lineupItem h1 { text-transform: none; font-size: 40px; line-height: 40px; background: url(../../public/assets/img/04_LINEUP_board.jpg) no-repeat; background-position: center; background-size: 80% 100%; min-width: 150px; padding: 10px; text-align: center; margin: 2%; }

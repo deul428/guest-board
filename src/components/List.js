@@ -8,9 +8,8 @@ function List() {
   const depthLineUp = (params, e) => {
     setcntryParams(params);
     // e.preventDefault();
-    console.log('List:: ', listParams, params);
+    // console.log('props \nList:: ', listParams, params);
   };
-
 
   //listParams 값이 비디오면 kor 클래스 display none
   var isShown = 'none';
@@ -18,6 +17,12 @@ function List() {
     isShown = 'none';
   } else {
     isShown = 'block';
+  }
+  var isVdoShown = 'none';
+  if (listParams == 'vdo') {
+    isVdoShown = 'block';
+  } else {
+    isVdoShown = 'none';
   }
 
   var currentField = listParams;
@@ -35,28 +40,35 @@ function List() {
   return (
     <div className="listArea commonBg">
       <Header />
-      <div className="h2Area">
-        <h2>{ currentField }</h2>
-      </div>
-      <div className="listItemArea">
-        <div className="listKor" style={{ display: isShown }} onClick={(e)=>{depthLineUp('kor', e)}}>
-          <Link to="/lineup">
-              <img src={process.env.PUBLIC_URL + 'assets/img/03_LIST_KOR.jpg'} 
-              className='listItem listKor'
-              alt='list item kor'
-              />
-          </Link>
+      <div className="listWrap">
+        <div className="h2Area">
+          <h2>{ currentField }</h2>
         </div>
-        <div className="listAbd" onClick={(e)=>{depthLineUp('abd', e)}}>
-          <Link to="/lineup">
-            <img src={process.env.PUBLIC_URL + 'assets/img/03_LIST_ABD.jpg'} 
+        <div className="listItemArea">
+          <div className="listKor" style={{ display: isShown }} onClick={(e)=>{depthLineUp('kor', e)}}>
+            <Link to="/lineup">
+                <img src={process.env.PUBLIC_URL + '/assets/img/03_LIST_KOR.jpg'} 
+                className='listItem listKor'
+                alt='list item kor'
+                />
+            </Link>
+          </div>
+          <div className="listAbd" onClick={(e)=>{depthLineUp('abd', e)}}>
+            <Link to="/lineup">
+              <img src={process.env.PUBLIC_URL + '/assets/img/03_LIST_ABD.jpg'} 
+              className='listItem listAbd'
+              alt='list item abd'
+              />
+            </Link>
+          </div>
+          <div className="listHide" style={{ display: isVdoShown, opacity: '0', pointerEvents: 'none' }}>
+            <img src={process.env.PUBLIC_URL + '/assets/img/03_LIST_ABD.jpg'} 
             className='listItem listAbd'
             alt='list item abd'
             />
-          </Link>
+          </div>
         </div>
       </div>
-      <div className="commonDotted"></div>
     </div>
   );
 }
